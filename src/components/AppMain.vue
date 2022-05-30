@@ -12,6 +12,9 @@
     <section>
       <AppSectionThree />
     </section>
+    <section class="mt-5 mb-5">
+      <AppSectionFourth />
+    </section>
   </div>
 </template>
 
@@ -20,6 +23,7 @@ import AppJumbo from "./AppJumbo.vue";
 import AppSectionOne from "./AppSectionOne.vue";
 import AppSectionTwo from "./AppSectionTwo.vue";
 import AppSectionThree from "./AppSectionThree.vue";
+import AppSectionFourth from "./AppSectionFourth.vue";
 
 export default {
   name: "AppMain",
@@ -28,6 +32,7 @@ export default {
     AppSectionOne,
     AppSectionTwo,
     AppSectionThree,
+    AppSectionFourth,
   },
 };
 </script>
