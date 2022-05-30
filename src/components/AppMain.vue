@@ -6,18 +6,23 @@
     <section>
       <AppSectionOne />
     </section>
+    <section class="mt-5">
+      <AppSectionTwo />
+    </section>
   </div>
 </template>
 
 <script>
 import AppJumbo from "./AppJumbo.vue";
 import AppSectionOne from "./AppSectionOne.vue";
+import AppSectionTwo from "./AppSectionTwo.vue";
 
 export default {
   name: "AppMain",
   components: {
     AppJumbo,
     AppSectionOne,
+    AppSectionTwo,
   },
 };
 </script>
