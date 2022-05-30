@@ -1,28 +1,61 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <AppHeader :navArray="headerArray" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import AppHeader from "./components/AppHeader.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    AppHeader,
+  },
+  data: function () {
+    return {
+      headerArray: [
+        {
+          image: "home-2.png",
+          title: "Home",
+          active: true,
+        },
+        {
+          image: "document.png",
+          title: "Pages",
+          active: false,
+        },
+        {
+          image: "printer.png",
+          title: "Blog",
+          active: false,
+        },
+        {
+          image: "cart.png",
+          title: "Shop",
+          active: false,
+        },
+        {
+          image: "lab.png",
+          title: "Shortcodes",
+          active: false,
+        },
+        {
+          image: "chat.png",
+          title: "Support",
+          active: false,
+        },
+        {
+          image: "envelope.png",
+          title: "Contact",
+          active: false,
+        },
+      ],
+    };
   },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "./style/common.scss";
+@import "./style/variables.scss";
 </style>
