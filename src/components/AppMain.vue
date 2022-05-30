@@ -1,14 +1,23 @@
 <template>
-  <AppJumbo />
+  <div>
+    <section>
+      <AppJumbo />
+    </section>
+    <section>
+      <AppSectionOne />
+    </section>
+  </div>
 </template>
 
 <script>
 import AppJumbo from "./AppJumbo.vue";
+import AppSectionOne from "./AppSectionOne.vue";
 
 export default {
   name: "AppMain",
   components: {
     AppJumbo,
+    AppSectionOne,
   },
 };
 </script>

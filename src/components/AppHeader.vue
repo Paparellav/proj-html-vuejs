@@ -76,7 +76,7 @@ export default {
           color: $butterfly-bush;
 
           img {
-            width: 30px;
+            width: 25px;
             margin-bottom: 0.6rem;
           }
 
