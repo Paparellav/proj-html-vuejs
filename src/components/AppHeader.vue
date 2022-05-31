@@ -13,17 +13,11 @@
               <li
                 v-for="(item, index) in navArray"
                 :key="index"
-                :class="navArray[index].active ? 'active' : ''"
+                :class="item.active ? 'active' : ''"
               >
-                <a
-                  href="#"
-                  :class="navArray[index].active ? 'active-title' : ''"
-                >
-                  <img
-                    :src="require(`../assets/img/${navArray[index].image}`)"
-                    alt=""
-                  />
-                  <h5>{{ navArray[index].title }}</h5>
+                <a href="#" :class="item.active ? 'active-title' : ''">
+                  <img :src="require(`../assets/img/${item.image}`)" alt="" />
+                  <h5>{{ item.title }}</h5>
                 </a>
               </li>
             </ul>

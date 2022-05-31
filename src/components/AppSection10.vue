@@ -81,6 +81,9 @@
         ></textarea>
       </div>
     </div>
+    <div class="border_btn">
+      <button class="btn ms_btn">Send message</button>
+    </div>
   </div>
 </template>
 
@@ -152,6 +155,21 @@ textarea {
     position: absolute;
     top: 40%;
     right: 2%;
+  }
+}
+.border_btn {
+  width: 170px;
+  height: 50px;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  background-color: $blaze-orange;
+  .ms_btn {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $sugar-cane;
   }
 }
 </style>
