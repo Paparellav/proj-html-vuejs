@@ -8,6 +8,7 @@
       :archives="archivesArray"
       :features="featuresArray"
       :posts="postsArray"
+      :socials="socialsArray"
     />
   </div>
 </template>
@@ -140,6 +141,13 @@ export default {
           dateImg: "date_footer.png",
           dateTxt: "September 20, 2014",
         },
+      ],
+      socialsArray: [
+        "behance.png",
+        "dribbble.png",
+        "envato.png",
+        "facebook.png",
+        "twitter.png",
       ],
     };
   },
