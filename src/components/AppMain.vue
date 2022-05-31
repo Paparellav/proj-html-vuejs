@@ -33,6 +33,9 @@
     <section>
       <AppSection9 :maps="mapArray" />
     </section>
+    <section class="mt-5 mb-5">
+      <AppSection10 />
+    </section>
   </div>
 </template>
 
@@ -48,6 +51,7 @@ import AppSection6 from "./AppSection6.vue";
 import AppSection7 from "./AppSection7.vue";
 import AppSection8 from "./AppSection8.vue";
 import AppSection9 from "./AppSection9.vue";
+import AppSection10 from "./AppSection10.vue";
 
 export default {
   name: "AppMain",
@@ -63,6 +67,7 @@ export default {
     AppSection7,
     AppSection8,
     AppSection9,
+    AppSection10,
   },
   data: function () {
     return {
